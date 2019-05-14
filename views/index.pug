@@ -1,5 +1,18 @@
-extends layout
+extends layout.pug
 
-block content
-  h1= title
-  p Welcome to #{title}
+block content 
+  article.grid-container.portfolio-intro
+    div
+      //- Website headline and description
+      h1 Full Stack JavaScript Developer
+      p.lead.text-light
+        | Focusing on creating <strong>bold</strong>, <em>unique</em>, and AmAzInG user experiences
+  article.grid-container.portfolio-index
+    .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3  
+      //- Show a snippet of each profile
+      each project in projects
+        .cell
+          a(href=`/projects/${project.id}`)
+            img.thumbnail(src=`${project.image_url}`)
+            h5 #{project.project_name}
+      

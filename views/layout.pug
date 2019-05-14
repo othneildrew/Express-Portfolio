@@ -1,7 +1,51 @@
-doctype html
-html
+<!DOCTYPE html>
+html(class="no-js" lang="en" dir="ltr")
   head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
+    link(rel='stylesheet', href='/static/css/foundation.css')
+    link(rel='stylesheet', href='/static/css/style.css')
   body
-    block content
+    #my-info.off-canvas.position-left.reveal-for-large.portfolio-me(data-off-canvas='')
+      .grid-y.grid-padding-x(style='height: 100%;')
+        block sidebar
+          br
+          .cell.shrink
+            img.thumbnail(src='/static/images/portrait.jpg')
+          .cell.auto
+
+            //- Name for desktop screen size
+            h5 Othneil Drew
+
+            //- About description
+            p.text-light
+              | Othneil Drew is a self-taught professional developer who is driven to learn, highly coachable, and passionate about technology’s ability to bring people together.
+              |
+              ul
+                span <strong>Skills Include:</strong>
+                li UI/UX Design
+                li Web Development
+                li Strategic Planning &amp; Marketing
+                li Technical Writing
+
+            //- About page CTA
+            a(href='/about') Learn More →
+
+    .off-canvas-content(data-off-canvas-content='')
+      .title-bar.hide-for-large
+        .title-bar-left
+          button.menu-icon(type='button', data-toggle='my-info')
+
+          //- Name for mobile screen sized version
+          span.title-bar-title Othneil Drew
+      block content
+        
+
+      
+  script(src='/static/js/vendor/jquery.js')
+  script(src='/static/js/vendor/what-input.js')
+  script(src='/static/js/vendor/foundation.js')
+  script(src='/static/js/scripts.js')

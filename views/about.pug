@@ -1,0 +1,57 @@
+extends layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-6.medium-9.large-9
+        
+        h1 Othneil Drew
+
+        p.lead.text-light
+          | Full Stack JavaScript Developer &amp; Pilot
+
+        //- Elevator pitch
+        .portfolio-bio
+          p
+            | He is the founder of Student Pilot Portal, an online platform that enables aspiring aviators to learn about aviation, share their passion for flight, and connect with others worldwide.
+            br
+            br
+            | With 900+ hours of volunteered service to the aviation community, he serves as an advocate for promoting youths education in the industry and is actively involved with many organizations like the Organization of Black Aerospace Professionals, Virgin Islands Chapter Tuskegee Airmnen, Inc., U.S. Dream Academy, and the United States Coast Guard Auxiliary.
+            br
+            br
+            | He has raised more than $2,000 in donations for nonprofits and is responsible for an initial 15% increase in his school's student pilot enrollment which he obtained through social media and print recruitment campaigns.
+            br
+            br
+            | Drew currently works as a Freelance Developer in Houston Texas. His other interests are flight simulation, photography, gaming, guitar, and the show NCIS: Los Angeles. 
+      .cell.portfolio-meta.small-6.medium-2.large-3
+        h6 Skills
+
+        //- List of skills
+        ul
+          li HTML
+          li CSS
+          li JavaScript / ES6+
+          li JQuery
+          li Node.js
+          li Express
+          li Git &amp; GitHub
+          li AJAX
+          li APIs
+          li JSON
+          li Pug
+        h6 Contact Info
+
+        //- Contact info
+        ul
+          li (832) 942-8667
+          li codeguydrew@gmail.com
+
+        //- Social media accounts
+        a.button.expanded(href='https://linkedin.com/in/othneildrew', target='_blank') LinkedIn
+        a.button.expanded(href='https://github.com/othneildrew', target='_blank') GitHub
+        a.button.expanded(href='https://dribbble.com/othneildrew', target='_blank') Dribbble
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
+  

@@ -36,10 +36,12 @@ h1,h2,h3,h4,h5,p{
 .button{
   margin-top: 1rem;
   padding: 15px 0px;
+  background: #5162EA;
   transition: all .2s ease-in-out;
 }
 
 .button:hover {
+  background: #5162EA;
   transform: scale(1.05);
 }
 

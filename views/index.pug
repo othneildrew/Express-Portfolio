@@ -13,6 +13,8 @@ block content
       each project in projects
         .cell
           a(href=`/projects/${project.id}`)
-            img.thumbnail(src=`${project.image_url}`)
+            - let main_image = `${baseImageURL + project.id}/`;
+            - main_image += `${project.image_urls.main}`;
+            img.thumbnail(src=`${main_image}`)
             h5 #{project.project_name}
       

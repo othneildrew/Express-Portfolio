@@ -8,9 +8,14 @@ const { projects } = projectsData;
 
 /* GET home page */
 router.get('/', function(req, res) {
+
+  // Dynamically create base url for project images
+  const baseImageURL = '/static/images/projects/';
+
   res.render('index', {
     title: 'Othneil Drew - Full Stack JavaScript Developer & Pilot',
-    projects: projects
+    projects: projects,
+    baseImageURL: baseImageURL
   });
 });
 
@@ -20,6 +25,7 @@ router.get('/about', function(req, res) {
     title: 'About Othneil Drew'
   });
 });
+
 
 
 

@@ -7,7 +7,15 @@
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://www.othneildrew.com/Random-Quote-Generator",
       "github_link": "https://www.github.com/othneildrew/Random-Quote-Generator",
-      "image_url": "/static/images/projects/random-quote.jpeg"
+      "image_urls": {
+        "main": "random-quote.png",
+        "animated": "random-quote.gif",
+        "showcase": [
+          "random-quote-1.png",
+          "random-quote-2.png",
+          "random-quote-3.png"
+        ]
+      }
     },
     {
       "id": "list-pagination-filtering",
@@ -16,7 +24,15 @@
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://www.othneildrew.com/List-Pagination-And-Filtering",
       "github_link": "https://www.github.com/othneildrew/List-Pagination-And-Filtering",
-      "image_url": "/static/images/projects/list-pagination-filter.jpeg"
+      "image_urls": {
+        "main": "list-pagination-filtering.png",
+        "animated": "list-pagination-filtering.gif",
+        "showcase": [
+          "list-pagination-filtering-1.png",
+          "list-pagination-filtering-2.png",
+          "list-pagination-filtering-3.png"
+        ]
+      }
     },
     {
       "id": "interactive-form",
@@ -25,7 +41,15 @@
       "technologies": ["HTML", "CSS", "JavaScript", "JQuery"],
       "live_link": "https://www.othneildrew.com/Interactive-Form",
       "github_link": "https://www.github.com/othneildrew/Interactive-Form",
-      "image_url": "/static/images/projects/interactive-form.jpeg"
+      "image_urls": {
+        "main": "interactive-form.png",
+        "animated": "interactive-form.gif",
+        "showcase": [
+          "interactive-form-1.png",
+          "interactive-form-2.png",
+          "interactive-form-3.png"
+        ]
+      }
     },
     {
       "id": "phrase-hunter",
@@ -34,7 +58,15 @@
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://www.othneildrew.com/PhraseHunter",
       "github_link": "https://www.github.com/othneildrew/PhraseHunter",
-      "image_url": "/static/images/projects/phrase-hunter.gif"
+      "image_urls": {
+        "main": "phrase-hunter.png",
+        "animated": "phrase-hunter.gif",
+        "showcase": [
+          "phrase-hunter-1.png",
+          "phrase-hunter-2.png",
+          "phrase-hunter-3.png"
+        ]
+      }
     },
     {
       "id": "random-user-directory",
@@ -43,7 +75,32 @@
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://www.othneildrew.com/RandomUserDirectory",
       "github_link": "https://www.github.com/othneildrew/RandomUserDirectory",
-      "image_url": "/static/images/projects/random-user-directory.jpg"
+      "image_urls": {
+        "main": "random-user-directory.png",
+        "animated": "random-user-directory.gif",
+        "showcase": [
+          "random-user-directory-1.png",
+          "random-user-directory-2.png",
+          "random-user-directory-3.png"
+        ]
+      }
+    },
+    {
+      "id": "movie-flex",
+      "project_name": "Movie Flex",
+      "description": "Browse your favorite movies, actors and watch trailers. See what's playing in theaters right now. Discover upcoming, trending, and top-rated titles.",
+      "technologies": ["The Movie DB (TMDB) (API)", "Bootstrap", "JavaScript", "JQuery"],
+      "live_link": "https://www.othneildrew.com/Movie-Flex",
+      "github_link": "https://www.github.com/othneildrew/Movie-Flex",
+      "image_urls": {
+        "main": "movie-flex.png",
+        "animated": "movie-flex.gif",
+        "showcase": [
+          "movie-flex-1.png",
+          "movie-flex-2.png",
+          "movie-flex-3.png"
+        ]
+      }
     }
   ]
 }

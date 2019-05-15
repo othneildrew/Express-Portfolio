@@ -7,27 +7,26 @@ block content
     .grid-x
       .cell.small-6.medium-9.large-9
 
-        //- Use interploation to dynamically add the project title.
-        h1 Title
+        //- Dynamically add the project title
+        h1 #{project.project_name}
 
-        //- Use interploation to dynamically add the project description.
+        //- Dynamically add the project description
         p.lead.text-light
-          | Description
+          | #{project.description}
 
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Technologies
 
-        //- Use an `each` iterator to replace the li tags below and interploation to dynamically add the technologies used in each project.
+        //- Loop and show each value in projec. technologies array
         ul
-          li HTML
-          li CSS
-          li JavaScript
+          each tag in project.technologies
+            li #{tag}
 
-        //- Use template literals and interpolation to add URLs to the hrefs below so they link to the repo and the live version of each project.
-        a.button.expanded(href='') Live Demo
-        a.button.expanded(href='') GitHub Repo
+        //- Dynamically add project links
+        a.button.expanded(href=`${project.live_link}`, target='_blank') Live Demo
+        a.button.expanded(href=`${project.github_link}`, target='_blank') GitHub Repo
     
-    //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential emplyers will like to see. 
-    img.image(src='https://placehold.it/1200x550')
-    img.image(src='https://placehold.it/1200x550')
-    img.image(src='https://placehold.it/1200x550')
+    //- Loop and show each image in project.images.showcase array
+    each image in project.image_urls.showcase
+      img.image(src=`${baseImageURL + image}`)
+      

@@ -8,13 +8,13 @@ const mainRouter = require('./routes');
 const projectsRouter = require('./routes/projects');
 
 const app = express();
-const port = 3333;
+const port = 3000;
 
 // view engine setup
 //app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.listen(port, () => {
-  console.log(`The application is running on port ${port}`);
+  console.log(`The application is running on localhost:${port}`);
 });
 
 //app.use(logger('dev'));

@@ -91,7 +91,7 @@ The original project files were provided by [Treehouse](https://teamtreehouse.co
   * Color Theme
   * Thumbnail style (borders, color, hover)
   * Button style (color, hover)
-  * All images
+  * All images (including logo, project screenshots, and animated gifs)
 
 
 

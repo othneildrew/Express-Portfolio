@@ -26,7 +26,7 @@ block content
         a.button.expanded#demo-btn(href=`${project.live_link}`, target='_blank') Live Demo
         a.button.expanded#repo-btn(href=`${project.github_link}`, target='_blank') GitHub Repo
     
-    //- Loop and show each image in project.images.showcase array
+    //- Loop and show each image in showcase array
     each image in project.image_urls.showcase
       img.image(src=`${baseImageURL + image}`)
       

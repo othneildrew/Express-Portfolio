@@ -1,8 +1,5 @@
 const createError = require('http-errors');
 const express = require('express');
-//const path = require('path');
-//const cookieParser = require('cookie-parser');
-//const logger = require('morgan');
 
 const mainRouter = require('./routes');
 const projectsRouter = require('./routes/projects');
@@ -11,16 +8,12 @@ const app = express();
 const port = 3000;
 
 // view engine setup
-//app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.listen(port, () => {
   console.log(`The application is running on localhost:${port}`);
 });
 
-//app.use(logger('dev'));
-//app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-//app.use(cookieParser());
 app.use('/static', express.static('public'));
 
 app.use('/', mainRouter);

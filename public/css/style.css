@@ -34,11 +34,24 @@ h1,h2,h3,h4,h5,p{
 }
 
 .button{
-  background-color: #333;
+  margin-top: 1rem;
+  padding: 15px 0px;
+  transition: all .2s ease-in-out;
 }
 
-.button:hover{
-  background-color: #111;
+.button:hover {
+  transform: scale(1.05);
+}
+
+#demo-btn {
+  background: #5162EA;
+  font-weight: 600;
+}
+
+#repo-btn {
+  border: 3px solid #5162EA;
+  background: #fff;
+  color: #5162EA;
 }
 
 a{
@@ -52,16 +65,16 @@ a:hover{
 .image{
   display: inline-block;
   max-width: 100%;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   border: solid 4px #fefefe;
   border-radius: 0;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, .2);
   line-height: 0;
 }
 
 .portfolio-me{
   padding: 20px;
-  background: #192bc2;
+  background: #5162EA;
   color: #fff;
   box-shadow: none !important;
 }
@@ -120,7 +133,9 @@ a:hover{
 }
 
   .portfolio-index .thumbnail{
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .2);
   }
 
   .portfolio-index a{
